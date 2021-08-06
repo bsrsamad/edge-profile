@@ -1,0 +1,880 @@
+@font-face {
+  font-family: "Cera Pro";
+  src: url(../fonts/Cera_Pro.otf);
+}
+
+@font-face {
+  font-family: "Coves";
+  src: url(../fonts/Coves_Bold.otf);
+}
+
+@font-face {
+  font-family: "calibri";
+  src: url(../fonts/calibril.ttf);
+}
+
+@font-face {
+  font-family: "vulture";
+  src: url(../fonts/Taken-by-Vultures-Demo.otf);
+}
+
+@-webkit-keyframes mitop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translatey(-100px);
+            transform: translatey(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes mitop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translatey(-100px);
+            transform: translatey(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes mileft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes mileft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(20px);
+            transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes mileft2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes mileft2 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+  80% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes miright {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  80% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes miright {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(100px);
+            transform: translateX(100px);
+  }
+  80% {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+body {
+  padding: 10vh;
+  padding-top: 5vh;
+  margin: 0%;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(61, 165, 220, 0.9)), to(#05052b));
+  background-image: linear-gradient(to right bottom, rgba(61, 165, 220, 0.9), #05052b);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.heading {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(241, 245, 240, 0.95)), to(rgba(241, 247, 244, 0.6))), url(../img/hot-air-ballon-flying-low.jpg);
+  background-image: linear-gradient(to right bottom, rgba(241, 245, 240, 0.95), rgba(241, 247, 244, 0.6)), url(../img/hot-air-ballon-flying-low.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.header-logo {
+  width: 30%;
+  padding-left: 10vh;
+  padding-top: 5vh;
+}
+
+.header-logo-img {
+  width: 80%;
+}
+
+.header-body {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 2vh;
+}
+
+.header-body-introText {
+  width: 50%;
+  padding-left: 10vh;
+}
+
+.header-body-introText-item {
+  font-size: 15vh;
+  font-family: "Coves";
+  color: #05052b;
+}
+
+.header-body-img {
+  width: 50%;
+  padding-left: 10vh;
+}
+
+.header-body-img-item {
+  width: 70%;
+  margin: auto;
+}
+
+.header-line {
+  width: 82%;
+  margin-left: 10vh;
+  margin-top: 5vh;
+  height: 1vh;
+  border-radius: 0.8vh;
+  background: #ff991f;
+}
+
+.header-info {
+  width: 86%;
+  margin-left: 10vh;
+  margin-top: 2vh;
+  padding-bottom: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-info-items {
+  font-size: 4vh;
+  font-family: "Cera Pro";
+  padding-right: 15vh;
+  color: black;
+}
+
+.about {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 5vh;
+}
+
+.about-info {
+  width: 40%;
+  padding: 8vh;
+}
+
+.about-info-header {
+  font-size: 6vh;
+  font-family: "Cera Pro";
+  color: black;
+}
+
+.about-info-line {
+  width: 20%;
+  height: 2vh;
+  background: #ff991f;
+  border-radius: 3px;
+}
+
+.about-info-body {
+  padding-top: 3vh;
+  font-family: "calibri";
+  font-weight: 600;
+}
+
+.about-side {
+  background-image: url(../img/about.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 60%;
+  border-radius: 15px;
+}
+
+.about-side-img {
+  width: 100%;
+}
+
+.about-side-img-item {
+  width: 80%;
+  padding: 10vh;
+}
+
+.how {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 5vh;
+}
+
+.how-info {
+  width: 40%;
+  padding: 8vh;
+}
+
+.how-info-header {
+  font-size: 6vh;
+  font-family: "Cera Pro";
+  color: black;
+}
+
+.how-info-line {
+  width: 20%;
+  height: 2vh;
+  background: #ff991f;
+  border-radius: 3px;
+}
+
+.how-info-body {
+  padding-top: 3vh;
+  font-family: "calibri";
+  font-weight: 600;
+}
+
+.how-side {
+  background-image: url(../img/31576.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 60%;
+  border-radius: 15px;
+}
+
+.how-side-img {
+  width: 100%;
+}
+
+.how-side-img-item {
+  width: 80%;
+  padding: 10vh;
+}
+
+.WHAT {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 5vh;
+}
+
+.WHAT-info {
+  width: 40%;
+  padding: 8vh;
+}
+
+.WHAT-info-header {
+  font-size: 6vh;
+  font-family: "Cera Pro";
+  color: black;
+}
+
+.WHAT-info-line {
+  width: 20%;
+  height: 2vh;
+  background: #ff991f;
+  border-radius: 3px;
+}
+
+.WHAT-info-body {
+  padding-top: 3vh;
+  font-family: "calibri";
+  font-weight: 600;
+}
+
+.WHAT-side {
+  background-image: url(../img/31576.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  width: 60%;
+  border-radius: 15px;
+}
+
+.WHAT-side-img {
+  width: 100%;
+}
+
+.WHAT-side-img-item {
+  width: 80%;
+  padding: 10vh;
+}
+
+.body {
+  background: white;
+  margin-top: 5vh;
+  border-radius: 15px;
+  padding: 8vh;
+}
+
+.body-focus {
+  width: 100%;
+}
+
+.body-focus-header {
+  font-size: 5vh;
+  font-family: "Cera Pro";
+  color: black;
+}
+
+.body-focus-line {
+  width: 9vh;
+  height: 2vh;
+  background: #ff991f;
+  border-radius: 2.5px;
+}
+
+.body-focus-para {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 3.5vh;
+}
+
+.body-focus-para-one {
+  width: 50%;
+  font-family: "calibri";
+  font-weight: 600;
+  padding-right: 12vh;
+}
+
+.body-focus-para-two {
+  width: 50%;
+  font-family: "calibri";
+  font-weight: 600;
+  padding-right: 2vh;
+}
+
+.body-mission {
+  width: 100%;
+}
+
+.body-mission-header {
+  font-size: 5vh;
+  font-family: "Cera Pro";
+  color: black;
+  padding-top: 5vh;
+}
+
+.body-mission-line {
+  width: 9vh;
+  height: 2vh;
+  background: #ff991f;
+  border-radius: 2.5px;
+}
+
+.body-mission-para {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 3.5vh;
+}
+
+.body-mission-para-one {
+  width: 50%;
+  font-family: "calibri";
+  font-weight: 600;
+  padding-right: 12vh;
+}
+
+.body-mission-para-two {
+  width: 50%;
+  font-family: "calibri";
+  font-weight: 600;
+  padding-right: 2vh;
+}
+
+.team {
+  background: white;
+  border-radius: 15px;
+  padding-left: 8vh;
+  padding-top: 5vh;
+  margin-top: 5vh;
+}
+
+.team-header {
+  color: black;
+  font-family: "Cera Pro";
+  font-size: 5vh;
+}
+
+.team-line {
+  width: 10vh;
+  height: 2vh;
+  background: #ff991f;
+  border-radius: 0.5vh;
+}
+
+.team-intro {
+  font-family: "calibri";
+  font-weight: 600;
+  font-size: 2.5vh;
+  width: 50%;
+  padding-top: 3vh;
+}
+
+.team-member {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 8vh;
+  padding-bottom: 4vh;
+}
+
+.team-member-pod-two {
+  width: 33.3%;
+}
+
+.team-member-pod-two-img {
+  width: 45vh;
+  height: 40vh;
+  background-color: #ff991f;
+  margin: 0;
+  border-radius: 20px;
+}
+
+.team-member-pod-two-header {
+  font-family: "Cera Pro";
+  font-size: 3.4vh;
+  padding-bottom: 2vh;
+  padding-top: 2vh;
+  color: black;
+}
+
+.team-member-pod-two-para {
+  width: 90%;
+  padding-left: 0vh;
+  font-family: "calibri";
+  font-weight: 600;
+  font-size: 2vh;
+}
+
+.staff-head {
+  font-family: "Coves";
+  font-weight: 800;
+  font-size: 7vh;
+  color: black;
+  text-align: center;
+  padding-top: 4vh;
+}
+
+.staff-info {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 4vh;
+}
+
+.staff-info-pods {
+  width: 33.3%;
+  padding-top: 6vh;
+}
+
+.staff-info-pods-name {
+  font-family: "Cera Pro";
+  text-align: center;
+  font-size: 3vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+}
+
+.staff-info-pods-img {
+  width: 30vh;
+  height: 30vh;
+  background: #ff991f;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.staff-info-pods-line {
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  width: 50%;
+  height: 0.2vh;
+  background: #ff991f;
+  border-radius: 3px;
+  margin: auto;
+}
+
+.staff-info-pods-task {
+  font-family: "Coves";
+  font-weight: 300;
+  font-size: 4vh;
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background: white;
+    padding: 5vh;
+    padding-top: 0vh;
+    padding-left: 3vh;
+  }
+  .header {
+    background: white;
+    border-radius: 0px;
+    width: 100%;
+  }
+  .header-logo {
+    width: 100%;
+    padding-left: 0vh;
+    padding-top: 3.5vh;
+  }
+  .header-logo-img {
+    width: 60%;
+  }
+  .header-body {
+    width: 100%;
+    display: inline;
+    padding-top: 5vh;
+  }
+  .header-body-introText {
+    width: 100%;
+    padding-left: 0vh;
+  }
+  .header-body-introText-item {
+    font-size: 8vh;
+  }
+  .header-body-img {
+    width: 0%;
+    display: none;
+  }
+  .header-line {
+    width: 110%;
+    margin-top: 2vh;
+    margin-left: 0vh;
+  }
+  .header-info {
+    width: 100%;
+    margin-left: 0vh;
+    margin-top: 1vh;
+    padding-bottom: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-info-items {
+    font-size: 1.5vh;
+    font-family: "Cera Pro";
+    padding-right: 1vh;
+    color: black;
+  }
+  .about {
+    width: 100%;
+    display: inline;
+    background-color: white;
+    border-radius: 0px;
+    margin-top: 3vh;
+  }
+  .about-info {
+    width: 100%;
+    padding: 0vh;
+  }
+  .about-info-header {
+    font-size: 4vh;
+  }
+  .about-info-line {
+    width: 40%;
+    height: 1.4vh;
+    background: #ff991f;
+    border-radius: 2px;
+  }
+  .about-side {
+    display: none;
+  }
+  .how {
+    width: 100%;
+    display: inline;
+    background-color: white;
+    border-radius: 0px;
+    margin-top: 3vh;
+  }
+  .how-info {
+    width: 100%;
+    padding: 0vh;
+    padding-top: 5vh;
+  }
+  .how-info-header {
+    font-size: 4vh;
+  }
+  .how-info-line {
+    width: 40%;
+    height: 1.4vh;
+    background: #ff991f;
+    border-radius: 2px;
+  }
+  .how-side {
+    display: none;
+  }
+  .WHAT {
+    width: 100%;
+    display: inline;
+    background-color: white;
+    border-radius: 0px;
+    margin-top: 3vh;
+  }
+  .WHAT-info {
+    width: 100%;
+    padding: 0vh;
+    padding-top: 5vh;
+  }
+  .WHAT-info-header {
+    font-size: 4vh;
+  }
+  .WHAT-info-line {
+    width: 40%;
+    height: 1.4vh;
+    background: #ff991f;
+    border-radius: 2px;
+  }
+  .WHAT-side {
+    display: none;
+  }
+  .body {
+    margin-top: 4vh;
+    border-radius: 0px;
+    padding: 0vh;
+  }
+  .body-focus-line {
+    height: 1.2vh;
+    border-radius: 1.5px;
+  }
+  .body-focus-para {
+    width: 100%;
+    display: inline;
+    padding-top: 0vh;
+  }
+  .body-focus-para-one {
+    padding-top: 3vh;
+    width: 100%;
+    padding-right: 0vh;
+  }
+  .body-focus-para-two {
+    padding-top: 3vh;
+    width: 100%;
+    padding-right: 0vh;
+  }
+  .body-mission-line {
+    height: 1.2vh;
+    border-radius: 1.5px;
+  }
+  .body-mission-para {
+    width: 100%;
+    display: inline;
+    padding-top: 0vh;
+  }
+  .body-mission-para-one {
+    padding-top: 3vh;
+    width: 100%;
+    padding-right: 0vh;
+  }
+  .body-mission-para-two {
+    padding-top: 3vh;
+    width: 100%;
+    padding-right: 0vh;
+  }
+  .team {
+    border-radius: 0px;
+    padding-left: 0vh;
+    padding-top: 0vh;
+    margin-top: 3.5vh;
+  }
+  .team-header {
+    color: black;
+    font-family: "Cera Pro";
+    font-size: 5vh;
+  }
+  .team-line {
+    width: 10vh;
+    height: 1.5vh;
+    border-radius: 0.3vh;
+  }
+  .team-intro {
+    font-family: "calibri";
+    font-weight: 600;
+    font-size: 2.5vh;
+    width: 100%;
+    padding-top: 3vh;
+  }
+  .team-member {
+    width: 100%;
+    display: inline;
+    margin-top: 8vh;
+    padding-bottom: 4vh;
+  }
+  .team-member-pod-two {
+    width: 100%;
+    padding-top: 3vh;
+  }
+  .team-member-pod-two-img {
+    width: 39vh;
+    height: 35vh;
+  }
+  .team-member-pod-two-header {
+    font-size: 2.7vh;
+    padding-bottom: 2vh;
+    padding-top: 2vh;
+    color: black;
+  }
+  .team-member-pod-two-para {
+    width: 90%;
+    padding-left: 0vh;
+    font-family: "calibri";
+    font-weight: 600;
+    font-size: 2vh;
+  }
+  .staff-head {
+    font-family: "Coves";
+    font-weight: 800;
+    font-size: 5vh;
+    color: black;
+    text-align: center;
+    padding-top: 4vh;
+  }
+  .staff-info {
+    width: 100%;
+    display: inline;
+    padding-bottom: 4vh;
+  }
+  .staff-info-pods {
+    width: 100%;
+    padding-top: 6vh;
+  }
+  .staff-info-pods-name {
+    font-family: "Cera Pro";
+    text-align: center;
+    font-size: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+  }
+  .staff-info-pods-img {
+    width: 30vh;
+    height: 30vh;
+    background: #ff991f;
+    border-radius: 50%;
+    margin: auto;
+  }
+  .staff-info-pods-line {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 50%;
+    height: 0.2vh;
+    background: #ff991f;
+    border-radius: 3px;
+    margin: auto;
+  }
+  .staff-info-pods-task {
+    font-family: "Coves";
+    font-weight: 300;
+    font-size: 4vh;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */

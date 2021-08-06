@@ -1,0 +1,741 @@
+$blue-light: rgb(61, 165, 220);
+$yellow-light: rgb(255, 153, 31);
+$blue-dark: rgb(5, 5, 43);
+$red: rgb(156, 22, 29);
+$black: rgb(0, 0, 0);
+$purple: rgb(31, 2, 41);
+$cera: "Cera Pro";
+$Coves: "Coves";
+$calibri: "calibri";
+$vulture: " vulture";
+
+@font-face {
+  font-family: "Cera Pro";
+  src: url(../fonts/Cera_Pro.otf);
+}
+@font-face {
+  font-family: "Coves";
+  src: url(../fonts/Coves_Bold.otf);
+}
+@font-face {
+  font-family: "calibri";
+  src: url(../fonts/calibril.ttf);
+}
+@font-face {
+  font-family: "vulture";
+  src: url(../fonts/Taken-by-Vultures-Demo.otf);
+}
+@keyframes mitop {
+  0% {
+    opacity: 0;
+    transform: translatey(-100px);
+  }
+
+  80% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes mileft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes mileft2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+@keyframes miright {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+body {
+  padding: 10vh;
+  padding-top: 5vh;
+  margin: 0%;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(61, 165, 220, 0.9),
+    rgba(5, 5, 43, 1)
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.heading {
+  padding: 0;
+  margin: 0;
+}
+.header {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(241, 245, 240, 0.95),
+      rgba(241, 247, 244, 0.6)
+    ),
+    url(../img/hot-air-ballon-flying-low.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  border-radius: 15px;
+  width: 100%;
+  &-logo {
+    width: 30%;
+    padding-left: 10vh;
+    padding-top: 5vh;
+    &-img {
+      width: 80%;
+    }
+  }
+  &-body {
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding-top: 2vh;
+    &-introText {
+      width: 50%;
+      padding-left: 10vh;
+      &-item {
+        font-size: 15vh;
+        font-family: "Coves";
+        color: $blue-dark;
+      }
+    }
+    &-img {
+      width: 50%;
+      padding-left: 10vh;
+      &-item {
+        width: 70%;
+        margin: auto;
+      }
+    }
+  }
+  &-line {
+    width: 82%;
+    margin-left: 10vh;
+    margin-top: 5vh;
+    height: 1vh;
+    border-radius: 0.8vh;
+    background: $yellow-light;
+  }
+  &-info {
+    width: 86%;
+    margin-left: 10vh;
+    margin-top: 2vh;
+    padding-bottom: 5vh;
+    display: flex;
+    &-items {
+      font-size: 4vh;
+      font-family: "Cera Pro";
+      padding-right: 15vh;
+      color: $black;
+    }
+  }
+}
+.about {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 5vh;
+  &-info {
+    width: 40%;
+    padding: 8vh;
+    &-header {
+      font-size: 6vh;
+      font-family: $cera;
+      color: $black;
+    }
+    &-line {
+      width: 20%;
+      height: 2vh;
+      background: $yellow-light;
+      border-radius: 3px;
+    }
+    &-body {
+      padding-top: 3vh;
+      font-family: $calibri;
+      font-weight: 600;
+    }
+  }
+  &-side {
+    background-image: url(../img/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 60%;
+    border-radius: 15px;
+    &-img {
+      width: 100%;
+      &-item {
+        width: 80%;
+        padding: 10vh;
+      }
+    }
+  }
+}
+.how {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 5vh;
+  &-info {
+    width: 40%;
+    padding: 8vh;
+    &-header {
+      font-size: 6vh;
+      font-family: "Cera Pro";
+      color: $black;
+    }
+    &-line {
+      width: 20%;
+      height: 2vh;
+      background: $yellow-light;
+      border-radius: 3px;
+    }
+    &-body {
+      padding-top: 3vh;
+      font-family: $calibri;
+      font-weight: 600;
+    }
+  }
+  &-side {
+    background-image: url(../img/31576.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 60%;
+    border-radius: 15px;
+    &-img {
+      width: 100%;
+      &-item {
+        width: 80%;
+        padding: 10vh;
+      }
+    }
+  }
+}
+.WHAT {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  margin-top: 5vh;
+  &-info {
+    width: 40%;
+    padding: 8vh;
+    &-header {
+      font-size: 6vh;
+      font-family: "Cera Pro";
+      color: $black;
+    }
+    &-line {
+      width: 20%;
+      height: 2vh;
+      background: $yellow-light;
+      border-radius: 3px;
+    }
+    &-body {
+      padding-top: 3vh;
+      font-family: $calibri;
+      font-weight: 600;
+    }
+  }
+  &-side {
+    background-image: url(../img/31576.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 60%;
+    border-radius: 15px;
+    &-img {
+      width: 100%;
+      &-item {
+        width: 80%;
+        padding: 10vh;
+      }
+    }
+  }
+}
+.body {
+  background: white;
+  margin-top: 5vh;
+  border-radius: 15px;
+  padding: 8vh;
+  &-focus {
+    width: 100%;
+    &-header {
+      font-size: 5vh;
+      font-family: $cera;
+      color: $black;
+    }
+    &-line {
+      width: 9vh;
+      height: 2vh;
+      background: $yellow-light;
+      border-radius: 2.5px;
+    }
+    &-para {
+      width: 100%;
+      display: flex;
+      padding-top: 3.5vh;
+      &-one {
+        width: 50%;
+        font-family: $calibri;
+        font-weight: 600;
+        padding-right: 12vh;
+      }
+      &-two {
+        width: 50%;
+        font-family: $calibri;
+        font-weight: 600;
+        padding-right: 2vh;
+      }
+    }
+  }
+  &-mission {
+    width: 100%;
+    &-header {
+      font-size: 5vh;
+      font-family: $cera;
+      color: $black;
+      padding-top: 5vh;
+    }
+    &-line {
+      width: 9vh;
+      height: 2vh;
+      background: $yellow-light;
+      border-radius: 2.5px;
+    }
+    &-para {
+      width: 100%;
+      display: flex;
+      padding-top: 3.5vh;
+      &-one {
+        width: 50%;
+        font-family: $calibri;
+        font-weight: 600;
+        padding-right: 12vh;
+      }
+      &-two {
+        width: 50%;
+        font-family: $calibri;
+        font-weight: 600;
+        padding-right: 2vh;
+      }
+    }
+  }
+}
+.team {
+  background: white;
+  border-radius: 15px;
+  padding-left: 8vh;
+  padding-top: 5vh;
+  margin-top: 5vh;
+  &-header {
+    color: $black;
+    font-family: $cera;
+    font-size: 5vh;
+  }
+  &-line {
+    width: 10vh;
+    height: 2vh;
+    background: $yellow-light;
+    border-radius: 0.5vh;
+  }
+  &-intro {
+    font-family: $calibri;
+    font-weight: 600;
+    font-size: 2.5vh;
+    width: 50%;
+    padding-top: 3vh;
+  }
+  &-member {
+    width: 100%;
+    display: flex;
+    margin-top: 8vh;
+    padding-bottom: 4vh;
+
+    &-pod-two {
+      width: 33.3%;
+      &-img {
+        width: 45vh;
+        height: 40vh;
+        background-color: $yellow-light;
+        margin: 0;
+        border-radius: 20px;
+      }
+      &-header {
+        font-family: $cera;
+        font-size: 3.4vh;
+        padding-bottom: 2vh;
+        padding-top: 2vh;
+        color: $black;
+      }
+      &-para {
+        width: 90%;
+        padding-left: 0vh;
+        font-family: $calibri;
+        font-weight: 600;
+        font-size: 2vh;
+      }
+    }
+  }
+}
+.staff {
+  &-head {
+    font-family: $Coves;
+    font-weight: 800;
+    font-size: 7vh;
+    color: $black;
+    text-align: center;
+    padding-top: 4vh;
+  }
+  &-info {
+    width: 100%;
+    display: flex;
+    padding-bottom: 4vh;
+    &-pods {
+      width: 33.3%;
+      padding-top: 6vh;
+      &-name {
+        font-family: $cera;
+        text-align: center;
+        font-size: 3vh;
+        padding-top: 1vh;
+        padding-bottom: 1vh;
+      }
+      &-img {
+        width: 30vh;
+        height: 30vh;
+        background: $yellow-light;
+        border-radius: 50%;
+        margin: auto;
+      }
+      &-line {
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+        width: 50%;
+        height: 0.2vh;
+        background: $yellow-light;
+        border-radius: 3px;
+        margin: auto;
+      }
+      &-task {
+        font-family: $Coves;
+        font-weight: 300;
+        font-size: 4vh;
+        text-align: center;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    background: white;
+    padding: 5vh;
+    padding-top: 0vh;
+    padding-left: 3vh;
+  }
+  .header {
+    background: white;
+    border-radius: 0px;
+    width: 100%;
+    &-logo {
+      width: 100%;
+      padding-left: 0vh;
+      padding-top: 3.5vh;
+      &-img {
+        width: 60%;
+      }
+    }
+    &-body {
+      width: 100%;
+      display: inline;
+      padding-top: 5vh;
+      &-introText {
+        width: 100%;
+        padding-left: 0vh;
+        &-item {
+          font-size: 8vh;
+        }
+      }
+      &-img {
+        width: 0%;
+        display: none;
+      }
+    }
+    &-line {
+      width: 110%;
+      margin-top: 2vh;
+      margin-left: 0vh;
+    }
+    &-info {
+      width: 100%;
+      margin-left: 0vh;
+      margin-top: 1vh;
+      padding-bottom: 5vh;
+      display: flex;
+      &-items {
+        font-size: 1.5vh;
+        font-family: "Cera Pro";
+        padding-right: 1vh;
+        color: $black;
+      }
+    }
+  }
+  .about {
+    width: 100%;
+    display: inline;
+    background-color: white;
+    border-radius: 0px;
+    margin-top: 3vh;
+    &-info {
+      width: 100%;
+      padding: 0vh;
+      &-header {
+        font-size: 4vh;
+      }
+      &-line {
+        width: 40%;
+        height: 1.4vh;
+        background: $yellow-light;
+        border-radius: 2px;
+      }
+    }
+    &-side {
+      display: none;
+    }
+  }
+  .how {
+    width: 100%;
+    display: inline;
+    background-color: white;
+    border-radius: 0px;
+    margin-top: 3vh;
+    &-info {
+      width: 100%;
+      padding: 0vh;
+      padding-top: 5vh;
+      &-header {
+        font-size: 4vh;
+      }
+      &-line {
+        width: 40%;
+        height: 1.4vh;
+        background: $yellow-light;
+        border-radius: 2px;
+      }
+    }
+    &-side {
+      display: none;
+    }
+  }
+  .WHAT {
+    width: 100%;
+    display: inline;
+    background-color: white;
+    border-radius: 0px;
+    margin-top: 3vh;
+    &-info {
+      width: 100%;
+      padding: 0vh;
+      padding-top: 5vh;
+      &-header {
+        font-size: 4vh;
+      }
+      &-line {
+        width: 40%;
+        height: 1.4vh;
+        background: $yellow-light;
+        border-radius: 2px;
+      }
+    }
+    &-side {
+      display: none;
+    }
+  }
+  .body {
+    margin-top: 4vh;
+    border-radius: 0px;
+    padding: 0vh;
+    &-focus {
+      &-line {
+        height: 1.2vh;
+        border-radius: 1.5px;
+      }
+      &-para {
+        width: 100%;
+        display: inline;
+        padding-top: 0vh;
+        &-one {
+          padding-top: 3vh;
+          width: 100%;
+          padding-right: 0vh;
+        }
+        &-two {
+          padding-top: 3vh;
+          width: 100%;
+          padding-right: 0vh;
+        }
+      }
+    }
+    &-mission {
+      &-line {
+        height: 1.2vh;
+        border-radius: 1.5px;
+      }
+      &-para {
+        width: 100%;
+        display: inline;
+        padding-top: 0vh;
+        &-one {
+          padding-top: 3vh;
+          width: 100%;
+          padding-right: 0vh;
+        }
+        &-two {
+          padding-top: 3vh;
+          width: 100%;
+          padding-right: 0vh;
+        }
+      }
+    }
+  }
+  .team {
+    border-radius: 0px;
+    padding-left: 0vh;
+    padding-top: 0vh;
+    margin-top: 3.5vh;
+    &-header {
+      color: $black;
+      font-family: $cera;
+      font-size: 5vh;
+    }
+    &-line {
+      width: 10vh;
+      height: 1.5vh;
+      border-radius: 0.3vh;
+    }
+    &-intro {
+      font-family: $calibri;
+      font-weight: 600;
+      font-size: 2.5vh;
+      width: 100%;
+      padding-top: 3vh;
+    }
+    &-member {
+      width: 100%;
+      display: inline;
+      margin-top: 8vh;
+      padding-bottom: 4vh;
+
+      &-pod-two {
+        width: 100%;
+        padding-top: 3vh;
+        &-img {
+          width: 39vh;
+          height: 35vh;
+        }
+        &-header {
+          font-size: 2.7vh;
+          padding-bottom: 2vh;
+          padding-top: 2vh;
+          color: $black;
+        }
+        &-para {
+          width: 90%;
+          padding-left: 0vh;
+          font-family: $calibri;
+          font-weight: 600;
+          font-size: 2vh;
+        }
+      }
+    }
+  }
+  .staff {
+    &-head {
+      font-family: $Coves;
+      font-weight: 800;
+      font-size: 5vh;
+      color: $black;
+      text-align: center;
+      padding-top: 4vh;
+    }
+    &-info {
+      width: 100%;
+      display: inline;
+      padding-bottom: 4vh;
+      &-pods {
+        width: 100%;
+        padding-top: 6vh;
+        &-name {
+          font-family: $cera;
+          text-align: center;
+          font-size: 3vh;
+          padding-top: 1vh;
+          padding-bottom: 1vh;
+        }
+        &-img {
+          width: 30vh;
+          height: 30vh;
+          background: $yellow-light;
+          border-radius: 50%;
+          margin: auto;
+        }
+        &-line {
+          margin-top: 2vh;
+          margin-bottom: 2vh;
+          width: 50%;
+          height: 0.2vh;
+          background: $yellow-light;
+          border-radius: 3px;
+          margin: auto;
+        }
+        &-task {
+          font-family: $Coves;
+          font-weight: 300;
+          font-size: 4vh;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
