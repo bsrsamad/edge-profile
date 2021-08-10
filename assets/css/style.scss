@@ -1,17 +1,30 @@
 $blue-light: rgb(61, 165, 220);
-$yellow-light: rgb(255, 153, 31);
+$yellow-light: rgb(254, 187, 18);
+$yellow-dark: rgb(223, 130, 1);
 $blue-dark: rgb(5, 5, 43);
-$red: rgb(156, 22, 29);
+$blue-text: rgb(5, 5, 43);
+$white: rgb(255, 255, 255);
 $black: rgb(0, 0, 0);
 $purple: rgb(31, 2, 41);
+$ave: "Avenir";
 $cera: "Cera Pro";
 $Coves: "Coves";
 $calibri: "calibri";
-$vulture: " vulture";
+$vulture: "vulture";
+$Goth: "Gotham";
+$cor: "Corgette";
 
+@font-face {
+  font-family: "Avenir";
+  src: url(../fonts/AvenirLTStd-Book.otf);
+}
 @font-face {
   font-family: "Cera Pro";
   src: url(../fonts/Cera_Pro.otf);
+}
+@font-face {
+  font-family: "Corgette";
+  src: url(../fonts/Courgette-Regular.ttf);
 }
 @font-face {
   font-family: "Coves";
@@ -22,68 +35,12 @@ $vulture: " vulture";
   src: url(../fonts/calibril.ttf);
 }
 @font-face {
+  font-family: "Gotham";
+  src: url(../fonts/Gotham-Black.otf);
+}
+@font-face {
   font-family: "vulture";
   src: url(../fonts/Taken-by-Vultures-Demo.otf);
-}
-@keyframes mitop {
-  0% {
-    opacity: 0;
-    transform: translatey(-100px);
-  }
-
-  80% {
-    transform: translateX(0px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-@keyframes mileft {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-
-  80% {
-    transform: translateX(20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-@keyframes mileft2 {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-
-  80% {
-    transform: translateX(0px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
-}
-@keyframes miright {
-  0% {
-    opacity: 0;
-    transform: translateX(100px);
-  }
-
-  80% {
-    transform: translateX(-20px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(0);
-  }
 }
 body {
   padding: 10vh;
@@ -127,14 +84,14 @@ body {
     display: flex;
     margin: 0;
     padding: 0;
-    padding-top: 2vh;
     &-introText {
       width: 50%;
       padding-left: 10vh;
       &-item {
-        font-size: 15vh;
-        font-family: "Coves";
-        color: $blue-dark;
+        font-size: 12vh;
+        font-family: $Goth;
+        text-transform: uppercase;
+        color: $blue-text;
       }
     }
     &-img {
@@ -467,6 +424,246 @@ body {
     }
   }
 }
+.projects {
+  background: white;
+  border-radius: 25px;
+  margin-top: 5vh;
+  padding: 8vh;
+  padding-top: 5vh;
+  &-header {
+    color: $black;
+    font-family: $cera;
+    font-weight: 600;
+    font-size: 4vh;
+  }
+  &-line {
+    width: 4%;
+    height: 1vh;
+    background: $yellow-light;
+    border-radius: 1.6px;
+    margin-bottom: 6vh;
+  }
+  &-body {
+    width: 100%;
+    display: flex;
+    padding-top: 1vh;
+    &-col-one {
+      width: 30%;
+      &-htext {
+        font-size: 4vh;
+        font-weight: 900;
+        font-family: $cor;
+        color: $yellow-dark;
+      }
+      &-text {
+        padding-top: 2vh;
+        padding-bottom: 6vh;
+        font-family: $calibri;
+        font-size: 2vh;
+        font-weight: 600;
+        color: $black;
+        &-two {
+          padding-top: 2vh;
+          padding-bottom: 2vh;
+          font-family: $calibri;
+          font-size: 2vh;
+          font-weight: 500;
+          font-weight: 600;
+          color: $black;
+        }
+      }
+      &-img {
+        width: 100%;
+        &-item {
+          width: 100%;
+        }
+      }
+    }
+    &-col-two {
+      width: 70%;
+      padding-left: 6vh;
+      &-text {
+        padding-top: 2vh;
+        padding-bottom: 6vh;
+        font-family: $calibri;
+        font-size: 2vh;
+        font-weight: 600;
+        color: $black;
+        &-two {
+          padding-top: 6vh;
+          padding-bottom: 2vh;
+          font-family: $calibri;
+          font-size: 2vh;
+          font-weight: 600;
+          color: $black;
+        }
+      }
+      &-img {
+        width: 100%;
+        &-item {
+          width: 100%;
+        }
+      }
+      &-rows {
+        display: flex;
+        padding-top: 5vh;
+        &-one {
+          padding-right: 3vh;
+        }
+        &-two {
+          padding-left: 3vh;
+          // display: inline;
+        }
+      }
+    }
+  }
+  &-body-two {
+    width: 100%;
+    display: flex;
+    padding-top: 1vh;
+    &-col-one {
+      width: 30%;
+      padding-left: 6vh;
+      &-htext {
+        font-size: 4vh;
+        font-weight: 900;
+        font-family: $cor;
+        color: $yellow-dark;
+      }
+      &-text {
+        padding-top: 2vh;
+        padding-bottom: 6vh;
+        font-family: $calibri;
+        font-size: 2vh;
+        font-weight: 500;
+        &-two {
+          padding-top: 2vh;
+          padding-bottom: 2vh;
+          font-family: $calibri;
+          font-size: 2vh;
+          font-weight: 500;
+        }
+      }
+      &-img {
+        width: 100%;
+        &-item {
+          width: 100%;
+        }
+      }
+    }
+    &-col-two {
+      width: 70%;
+      &-htext {
+        font-size: 4vh;
+        font-weight: 900;
+        font-family: $cor;
+        color: $yellow-dark;
+      }
+      &-text {
+        padding-top: 2vh;
+        padding-bottom: 6vh;
+        font-family: $calibri;
+        font-size: 2vh;
+        font-weight: 500;
+        &-two {
+          padding-top: 6vh;
+          padding-bottom: 2vh;
+          font-family: $calibri;
+          font-size: 2vh;
+          font-weight: 500;
+        }
+      }
+      &-img {
+        width: 100%;
+        &-item {
+          width: 100%;
+        }
+      }
+      &-rows {
+        display: flex;
+        padding-top: 5vh;
+        &-one {
+          padding-right: 3vh;
+        }
+        &-two {
+          padding-left: 3vh;
+          // display: inline;
+        }
+      }
+    }
+  }
+}
+.contact {
+  background: white;
+  border-radius: 25px;
+  margin-top: 5vh;
+  padding: 8vh;
+  padding-top: 5vh;
+  &-header {
+    color: $blue-text;
+    font-family: $cera;
+    font-weight: 700;
+    font-size: 5vh;
+  }
+  &-line {
+    width: 10%;
+    height: 1vh;
+    background: $yellow-light;
+    border-radius: 1.6px;
+  }
+  &-row {
+    margin-top: 4vh;
+    display: flex;
+  }
+  &-cols {
+    width: 33.3%;
+    &-socials {
+      width: 100%;
+      display: flex;
+      &-col {
+        width: 10%;
+        padding-right: 4.5vh;
+        &-img {
+          padding: 0;
+          width: 130%;
+        }
+      }
+    }
+    &-name {
+      padding-top: 3vh;
+      font-size: 4vh;
+      font-family: $cera;
+    }
+    &-header {
+      font-size: 4vh;
+      font-weight: 600;
+      font-family: $cera;
+      color: $blue-text;
+    }
+    &-line {
+      width: 15%;
+      height: 1vh;
+      background-color: $yellow-light;
+      border-radius: 0.2vh;
+    }
+    &-phone {
+      &-no {
+        padding-top: 1vh;
+        margin: 0;
+        font-weight: 550;
+        font-size: 3vh;
+        font-family: $ave;
+      }
+      &-mail {
+        margin: 0;
+        font-weight: 600;
+        font-size: 3vh;
+        padding-top: 1vh;
+        font-family: $calibri;
+      }
+    }
+  }
+}
 @media screen and (max-width: 800px) {
   body {
     background: white;
@@ -494,9 +691,10 @@ body {
         width: 100%;
         padding-left: 0vh;
         &-item {
-          font-size: 8vh;
+          font-size: 4.5vh;
         }
       }
+
       &-img {
         width: 0%;
         display: none;
@@ -734,6 +932,148 @@ body {
           font-weight: 300;
           font-size: 4vh;
           text-align: center;
+        }
+      }
+    }
+  }
+  .projects {
+    border-radius: 0px;
+    margin-top: 5vh;
+    padding: 0vh;
+    padding-top: 0vh;
+    &-header {
+      letter-spacing: 3px;
+      word-spacing: 3px;
+    }
+    &-line {
+      width: 40%;
+      height: 1vh;
+      border-radius: 2.6px;
+    }
+    &-body {
+      width: 100%;
+      display: inline;
+      padding-top: 1vh;
+      &-col-one {
+        width: 105%;
+        max-width: 105%;
+        min-width: 90%;
+        &-htext {
+          font-size: 3vh;
+        }
+        &-img {
+          width: 100%;
+          &-item {
+            width: 100%;
+          }
+        }
+      }
+      &-col-two {
+        width: 105%;
+        max-width: 105%;
+        min-width: 90%;
+        padding-left: 0vh;
+        &-rows {
+          display: inline;
+          padding-top: 5vh;
+          &-one {
+            padding-right: 0vh;
+          }
+          &-two {
+            padding-left: 0vh;
+          }
+        }
+      }
+    }
+    &-body-two {
+      width: 100%;
+      display: inline;
+      padding-top: 1vh;
+      &-col-one {
+        width: 105%;
+        max-width: 105%;
+        min-width: 90%;
+        padding-left: 0vh;
+        &-text {
+          color: $black;
+          font-size: 2vh;
+          font-weight: 650;
+          &-two {
+            color: $black;
+            font-size: 2vh;
+            font-weight: 650;
+          }
+        }
+      }
+      &-col-two {
+        width: 105%;
+        max-width: 105%;
+        min-width: 90%;
+        &-text {
+          color: $black;
+          font-size: 2vh;
+          font-weight: 650;
+          &-two {
+            color: $black;
+            font-size: 2vh;
+            font-weight: 650;
+          }
+        }
+        &-rows {
+          display: inline;
+          padding-top: 5vh;
+          &-one {
+            padding-right: 0vh;
+          }
+          &-two {
+            padding-left: 0vh;
+            // display: inline;
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    border-radius: 0px;
+    margin-top: 5vh;
+    padding: 0vh;
+    padding-top: 1vh;
+    &-header {
+      word-spacing: 3vh;
+    }
+    &-line {
+      width: 50%;
+    }
+    &-row {
+      margin-top: 4vh;
+      display: inline;
+    }
+    &-cols {
+      width: 100%;
+      padding-top: 3vh;
+      padding-bottom: 0.5vh;
+      &-socials {
+        width: 100%;
+        &-col {
+          width: 10%;
+        }
+      }
+      &-name {
+        padding-top: 1.5vh;
+        font-size: 3.5vh;
+      }
+      &-line {
+        width: 15%;
+        height: 1vh;
+        background-color: $yellow-light;
+        border-radius: 0.2vh;
+      }
+      &-phone {
+        &-no {
+          padding-top: 2vh;
+        }
+        &-mail {
+          margin: 0;
         }
       }
     }
